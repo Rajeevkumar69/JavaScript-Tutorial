@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <link rel="stylesheet" href="domInJs.css">
+       
+        <title>DOM in JavaScript</title>
+</head>
+<body>
+        <!-- 
+                HOW TO TARGET DOM OBJECT:--
+
+                id -document.getElementById(idname)
+
+                className -document.getElementsByClassName(name)
+
+                Tag Name -document.getElementByTagName(name)
+
+                *document       document.all    document.documentElement
+                document.head   document.title  document.body
+                document.images document.anchor document.links
+                document.forms  document.doctype
+                document.URL    document.baseURI        document.domin
+         -->
+         <!-- 
+                DOM Get methods
+
+                innerText
+                innerHTML
+                getAttribute
+                getAttributeNode
+                Attribute
+          -->
+          <!-- 
+                New DOM Taregetting Method
+
+                querySelector
+                querySelectorAll
+           -->
+           <!-- 
+                DOM CSS Styling Method
+
+                style
+                className
+                classsName
+            -->
+            <!-- 
+                DOM ClassList Method
+
+                add     remove   toogle    contain
+                           item         Length
+             -->
+             <!-- 
+                DOM Traversal Methods
+
+                parentNode      lastChild       parentElement
+                lastElementChiuld       children        childNodes
+                nextElementSibling      nextSibling     firstChild
+                previousElementSibling  firstElementChild
+                        previousSibling
+              -->
+              <!-- 
+                        DOM Create Method
+                   createElement
+                   createTextNode
+                   createComment
+               -->
+               <!-- 
+                        DOM Append Method
+                   appendChild
+                   insertBefore
+                   insertAdjacentElement
+                   insertAdjacentHTML
+                   insertAdjacenTtEXT
+                -->
+                <!-- 
+                           **DOM Replace and Remove Method**
+                        replaceChild    removeChild
+                 -->
+                 <!-- 
+                                **DOM Contains Mewthod
+                        contains()
+                  -->
+                  <!-- 
+                                **DOM has Method
+                        
+                        hasAttribute()
+                        hasChildNodes()
+                   -->
+        <h3 id="head">DOM ==> Document Object Model</h3>
+        <img src="https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=400" alt="abcimage">
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos veniam recusandae adipisci molestiae sapiente sequi ipsa rerum eveniet odio earum ipsam vitae non ratione eaque cupiditate, accusamus dolore quaerat aliquam labore magni dignissimos atque. Fugiat rem veniam fugit adipisci, perspiciatis voluptatum consectetur provident deserunt porro? Minus laudantium porro aut.</h5>
+        <h1 class="h1">Lorem ipsum dolor sit amet.</h1>
+        <h3 class="h3">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+        <ul class="links">
+                <li class="link1"> Lorem, ipsum. </li>
+                <li class="link2"> Lorem, ipsum. </li>
+                <li class="link3"> Lorem, ipsum. </li>
+                <li class="link4"> Lorem, ipsum. </li>
+                <li class="link5"> Lorem, ipsum. </li>
+        </ul>
+        <img src="https://images.pexels.com/photos/5474295/pexels-photo-5474295.jpeg?auto=compress&cs=tinysrgb&w=400" alt="JavaScriptImage" class="btn-image" id="btn-image" />
+        <br><br>
+      
+        <h3 class="title" id="title" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+      
+        <h3 class="title2" id="title2">Lorem ipsum dolor sit. </h3>
+       
+        <div class="inner">
+        <h3 class="title3" id="title3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, quis.</h3>
+        <p class="child">Lorem ipsum dolor sit amet.
+                <p class="pchild">Lorem ipsum dolor sit amet.</p>
+        </p>
+        </div>
+        <div id="outer" class="outer">
+                <h3 id="outer3" class="outerh3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium.</h3>
+                <p id="outerp" class="outerp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam.
+                        <h5 class="outerpchild">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                </p>
+        </div>
+
+        <div class="create" id="create">
+                <h4 class="createh4" id="createh4">Lorem, ipsum dolor.</h4>
+                <img src="https://images.pexels.com/photos/1382728/pexels-photo-1382728.jpeg?auto=compress&cs=tinysrgb&w=400" alt="">
+                <b id="createb" >Lorem.</b>
+        </div>
+
+        <div id="fruits" class="fruits">
+                <li id="fruit1">Apple</li>
+                <li id="fruit2">Banana</li>
+                <li id="fruit3">mango</li>
+                <li id="fruit4">Papaya</li>
+        </div>
+
+       <div id="test" class="test">
+        <h2>Welcome in JavaScript DOM</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta velit quisquam ea accusantium beatae mollitia voluptas, laborum earum repellendus, quam voluptatibus pariatur, optio doloremque officiis.</p>
+        <br>
+        <p id="abc" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur culpa iure maxime beatae, fugiat rem natus velit? Magnam, amet, dolor nam iste illo fugiat dicta dolore consectetur voluptas nihil officia!</p>
+       </div>
+
+        <div class="button">
+        <button class="button" id="button">Click Me</button>
+        </div>
+        
+        <p id="footer" class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus cumque adipisci perferendis sunt quo!</p>
+        
+        <script src="domInJs.js"></script>
+</body>
+</html>

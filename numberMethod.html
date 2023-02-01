@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <title>Number Method in JavaScript</title>
+</head>
+<body>
+        <!-- 
+                Number()        parseInt()      parseFloat()
+                isFinite()      isInteger()     toFixed(x)
+                toPresion(x)
+         -->
+        <script>
+                var a  = "99";
+
+                var num = Number(a+22);
+                document.write(num+"<br><br>");
+
+                var a = true;
+                var num = Number(a+10);
+                document.write(num+"<br><br>");
+
+                var a = "99 88";
+                var num = Number(a+10);
+                document.write(num+"<br><br>");
+
+                var a = 2.10;
+                var num = parseInt(a);
+                document.write(num+"<br><br>");
+
+                var a = 21.808;
+                var num = parseFloat(a);
+                document.write(num+"<br><br>");
+
+                var a = 2.55510;
+                var num = isFinite(a);
+                document.write(num+"<br><br>");
+
+                var a = "210";
+                var num = Number.isInteger(a);
+                document.write(num+"<br><br>");
+
+                var a = 210;
+                var num = a.toFixed(8);
+                document.write(num+"<br><br>");
+
+                var a = 56.25;
+                var num = a.toPrecision(8);
+                document.write(num+"<br><br>");
+
+
+        </script>
+</body>
+</html>

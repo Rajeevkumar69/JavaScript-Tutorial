@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <title>Object and Method</title>
+</head>
+<body>
+        <script>
+                var obj1 = {
+                        name:"Rajeev",
+                        age:22,
+                        course:"B.Tech",
+                        roll:"A64",
+                        skills:["c","cpp","ds","python","javascript","html","css","React.js","Bootstrap","Tailwind","MaterilizedCSS","Angular","TypeScript","Git"],
+                        salary:function(){
+                                return 80000;
+                        },
+                        fullName:function(){
+                                return this.name + " " + this.age; 
+                        },
+                        address:{
+                                city:"Begusarai",
+                                state:"BIHAR",
+                                country:"INDIA"
+                        }
+                };
+                document.write(obj1.name+"<br><br>");
+                document.write(obj1.age+"<br><br>");
+                document.write(obj1.course+"<br><br>");
+                document.write(obj1.roll+"<br><br>");
+                document.write(obj1.skills+"<br><br>");
+                document.write(obj1.skills[5]+"<br><br>");
+                document.write(obj1.salary()+"<br><br>");
+                document.write(obj1.fullName()+"<br><br>");
+                document.write(obj1.address.city+"<br><br>");
+                document.write(obj1.address.state+"<br><br>");
+                document.write(obj1.address.country+"<br><br>");
+                // console.log(obj1);
+        </script>
+</body>
+</html>

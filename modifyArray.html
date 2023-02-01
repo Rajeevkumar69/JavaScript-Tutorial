@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <title>Modify and Rename Array</title>
+</head>
+<body>
+        <script>
+                var mArray = new Array(
+                        ["Chamcham","Female",23,"M.A"],
+                        ["Rajeev","Male",22,"B.Tech"],
+
+                )
+                 for(var a=0;a<mArray.length;a++){
+                        document.write(mArray);
+                        document.write("<br>");
+                 }
+                document.write("<br>");
+
+                
+                mArray[0][2]=24;
+                
+                document.write(mArray);
+
+                delete mArray[0][2];
+                
+                document.write("<br>");
+                
+                document.write(mArray);
+        </script>
+</body>
+</html>

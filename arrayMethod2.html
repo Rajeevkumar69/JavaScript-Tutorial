@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <title>Array Sorting Method</title>
+</head>
+<body>
+        <!-- 
+              *******ALL ARRAY METHOD IN JAVASCRIPT******
+
+              sort()            slice()         find()
+              reverse()         splice()        findIndex()
+              pop()             isArray()       includes()
+              push()            indexOf()       some()
+              shift()           lastIndexOf()   forEach()
+              unshift()         entries()       toString()
+              concat()          every()         valueOf()
+              join()            filter()        fill()
+         -->
+
+         <script>
+                var arr1 = new Array("ChamchamG","Rajeev","chamcham","Harsh");
+                document.write(arr1+ "<br><br>");
+
+                arr1.sort();
+                document.write(arr1+ "<br><br>");
+
+                arr1.reverse();
+                document.write(arr1+ "<br><br>");
+
+                arr1.pop();
+                document.write(arr1+ "<br><br>");
+
+                arr1.push("Sunita","Dev Narayan",25);
+                document.write(arr1+ "<br><br>");
+
+                arr1.shift();
+                // it'll delete the 1st element from the array
+                document.write(arr1+ "<br><br>");
+
+                arr1.unshift("ChamchamG");
+                // it'll add the 0th index in the array
+                document.write(arr1+ "<br><br>");
+
+                var arr2=arr1.concat("Om","Abhishek Yashyap");
+                document.write(arr2+ "<br><br>");
+
+                var arr2 = new Array("Om Pandey","Abhishek Yashyap");
+                var arr4 = new Array("Muskan Roy","GuptaG","Mrs.");
+
+                var arr3 = arr1.concat(arr2,arr4);
+                document.write(arr3+"<br><br>");
+
+                var arr5 = arr2.join("-");
+                document.write(arr5+"<br><br>");
+
+                var arr6 = arr2.slice(0,2);
+                document.write(arr6+"<br><br>");
+                
+                arr1.splice(2,1,"Chmmoo","Rajeev");
+                document.write(arr1+"<br><br>");
+
+                var arr7 = Array.isArray(arr1);
+                document.write(arr7+"<br><br>");
+                var arr8 = 20;
+                var arr9=Array.isArray(arr8);
+                document.write(arr9+"<br><br>");
+
+                var arr10 = arr1.indexOf("ChamchamG");
+                document.write(arr10+"<br><br>");
+
+                var arr11 = arr1.lastIndexOf("Sunita");
+                document.write(arr11+"<br><br>");
+
+                var arr12 = arr1.includes("Dev Narayan");
+                document.write(arr12+"<br><br>");
+
+                var arr13 = [10,16,21,18];
+                function checkAdult(age){
+                        return age >= 18;
+                }
+                // some() match with any single given task 
+                var arr14 = arr13.some(checkAdult);
+                document.write(arr14+"<br><br>");
+
+                // every() check with all the value in given task
+                var arr14 = arr13.every(checkAdult);
+                document.write(arr14+"<br><br>");
+
+                // find() method returns the value of the first element in the array that pass a test.
+                arr14 = arr13.find(checkAdult);
+                document.write(arr14+"<br><br>");
+
+
+                //  findIndexof() method returns the index of the first element in the array that pass a test.
+                arr14 = arr13.findIndex(checkAdult);
+                document.write(arr14+"<br><br>");
+
+                //  filter() method creates an array filled with all array element that pass a test.
+                arr14 = arr13.filter(checkAdult);
+                document.write(arr14+"<br><br>");
+
+                // The toString() method convert an array into a string and return the result.
+                arr2.toString();
+                document.write(arr2+"<br><br>");
+
+                // The valueOf() method return the array.
+                document.write(arr5.valueOf()+"<br><br>");
+
+                // The fill() method fills all the element in an array with a static value.
+                arr4.fill("Chamcham Gupta");
+                document.write(arr4+"<br><br>");
+
+                arr6.forEach(function(data,index){
+                        document.write(index + ":"+ data+"<br><br>");
+                });
+
+         </script>
+</body>
+</html>

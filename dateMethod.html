@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <title>Date Method in JavaScript</title>
+</head>
+<body>
+        <!-- 
+                toDateString()          getMiliseconds()
+                getDate()               setDate()
+                getFullYear()           setFullYear()
+                getMonth()              setMonth()
+                getDay()                setMiliseconds()
+                getHours()              setMinutes()
+                getMinutes()            setHours()
+                getSeconds()            setSeconds()
+         -->
+    <script>
+        var current = new Date();
+        document.write(current + "<br><br>");
+
+        var current = new Date();
+        document.write(current.toDateString() + "<br><br>");
+
+        var current = new Date();
+        document.write(current.getDate() + "<br><br>");
+
+        var current = new Date();
+        document.write(current.getFullYear() + "<br><br>");
+
+        var current = new Date();
+        document.write(current.getMonth() + "<br><br>");
+
+        var current = new Date();
+        document.write(current.getDay() + "<br><br>");
+
+        var current = new Date();
+        document.write(current.getHours() + "<br><br>");
+
+        var current = new Date();
+        document.write(current.getMinutes() + "<br><br>");
+
+        var current = new Date();
+        document.write(current.getSeconds() + "<br><br>");
+
+        var current = new Date();
+        document.write(current.getMilliseconds() + "<br><br>");
+
+        var current = new Date("February 9 2001");
+        document.write(current.getDay() + "<br><br>");
+
+        var current = new Date();
+        current.setDate(20);
+        document.write(current.toDateString() + "<br><br>");
+
+        var current = new Date();
+        current.setFullYear(2024);
+        document.write(current.toDateString() + "<br><br>");
+
+        var current = new Date();
+        current.setMonth(4);
+        document.write(current.toDateString() + "<br><br>");
+
+        var current = new Date();
+        current.setHours(14);
+        document.write(current.toDateString() + "<br><br>");
+
+        var current = new Date();
+        current.setSeconds(15);
+        document.write(current.toDateString() + "<br><br>");
+
+        var current = new Date();
+        current.setMilliseconds(24);
+        document.write(current.toDateString() + "<br><br>");
+
+        var current = new Date("February 9 2001");
+        document.write(current.getDay() + now.getMonth() + now.getFullYear()+ "<br><br>");
+
+    </script>    
+</body>
+</html>

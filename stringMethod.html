@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <title>string Method in JavaScript</title>
+</head>
+<body>
+        <!-- 
+                length -property indexOf()       concat()
+                toLowerCase()    lastIndexOf()   split()
+                toUpperCase()    replace()       repeat()
+                includes()       trim()          slice()
+                startsWith()     charAt()        subStr()
+                endsWith()       charCodeAt()    substring()
+                search()         fromCharCode()  toString()
+                match()                          valueOf()
+         -->
+        <script>
+                var str = "JavaScript is a scripiting  Language";
+
+                var a= str.length;
+                document.write(a+"<br><br>");
+
+                var a = str.toLowerCase();
+                document.write(a+"<br><br>");
+
+                var a = str.toUpperCase();
+                document.write(a+"<br><br>");
+
+                var a = str.includes("iting");
+                document.write(a+"<br><br>");
+
+               var a = str.startsWith("is");
+               document.write(a+"<br><br>");
+
+               var a = str.endsWith("Language");
+               document.write(a+"<br><br>");
+
+               var a = str.search("scr");
+               document.write(a+"<br><br>");
+
+               var a = str.match(/Language/g);
+               document.write(a+"<br><br>");
+
+               var a = str.indexOf("is");
+               document.write(a+"<br><br>");
+
+               var a = str.lastIndexOf("a");
+               document.write(a+"<br><br>");
+
+               var a = str.replace("scripiting","popular");
+               document.write(a+"<br><br>");
+
+               var a = str.trim(); 
+        //        alert(a);
+               document.write(a+"<br><br>");
+
+               var a = str.charAt(12);
+               document.write(a+"<br><br>");
+
+               var a = str.charCodeAt(0);
+               document.write(a+"<br><br>");
+
+               var a = String.fromCharCode(67)
+               document.write(a+"<br><br>");
+
+               var str2 = " Hello World";
+               var a = str.concat(str2);
+               document.write(a+"<br><br>");
+
+               var a = str.split(" ");
+               document.write(a+"<br><br>");
+
+               var a = str.repeat(5);
+               document.write(a+"<br><br>");
+
+               var a = str.slice(1,5);
+               document.write(a+"<br><br>");
+
+               var a = str.substr(2);
+               document.write(a+"<br><br>");
+
+               var a = str.substring(3,10);
+               document.write(a+"<br><br>");
+
+               var a = str.toString();
+               document.write(a+"<br><br>");
+
+               var a = str.valueOf();
+               document.write(a+"<br><br>");
+        </script>
+</body>
+</html>
