@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <title>Forms Event in JavaScript</title>
+</head>
+<body>
+        <!-- 
+                JavaScript forms events
+
+            keydown     select      keypress        keyup
+            focus()     blur()      input           change
+            submit      invalid          
+         -->
+         <div class="input-field">
+                <form>
+                <div class="name">
+                        <label>Name</label>
+                        <input type="text" oninput="inputFunction(this)"  onblur="blurFunction(this)" onfocus="focusFunction(this)" id="name">
+                </div>
+                
+                <div class="class">
+                        <label>Class</label>
+                        <input type="number" oninput="inputFunction(this)"  onblur="blurFunction(this)" onfocus="focusFunction(this)" name="class" id="class">
+                </div>
+                
+                <div class="country">
+                        <label>Country</label>
+                        <select oninput="inputFunction(this)" onfocus="focusFunction(this)"  onblur="blurFunction(this)">
+                                <option>India</option>
+                                <option>America</option>
+                                <option>Japan</option>
+                                <option>Thailand</option>
+                                <option>Maldip</option>
+                                <option>Russia</option>
+                        </select>
+                </div>
+               
+                <br>
+                <div class="sumit">
+                        <button type="submit">Submit</button>
+                </div>
+                <div id="border" class="border" style="border: 5px solid red; " ></div>
+        </form>
+         </div>
+
+        <script>
+                function focusFunction(element){
+                        element.style.backgroundColor = "lime";
+                }
+                function blurFunction(element){
+                        element.style.backgroundColor = "";
+                }
+                function inputFunction(element){
+                         var x = element.value;
+                         document.getElementById("border").innerHTML = x;
+                }
+        </script>
+</body>
+</html>

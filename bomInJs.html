@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <title>BOM in JavaScript</title>
+</head>
+<body onresize="resizeFunction()" >
+        <h3>BOM &nbsp; ==> Browser Object Model</h3>
+        <!-- 
+                Windows height and width
+              
+               innerHeight      innerWidth
+               outerwidth       outerWidth 
+         -->
+        <!-- 
+                  Window Object Method
+
+                open()          close()
+                moveBy()        moveTo()
+        -->
+
+        <button onclick="openWindow()" >Open Window</button>
+        <button onclick="closeWindow()" >Close Window</button>
+        <button onclick="moveWindow()" >Move Window</button>
+         <script>
+               function resizeFunction(){
+                console.clear();
+
+                // We can print any single BOM in console 
+                var innerH = window.innerHeight;
+                console.log( "InnerHeight: "+ innerH);
+
+                var innerW = window.innerWidth;
+                console.log( "InnerWidth: "+  innerW);
+                
+                var outerH = window.outerHeight;
+                console.log( "OuterHeight: "+ outerH);
+
+                var outerW = window.outerHeight;
+                console.log( "OuterWidth: "+ outerW);
+               }
+
+               function openWindow(){
+                var myWindow;
+                // window.open();
+                // window.open("http://www.youtube.com");
+                // window.open("http://www.youtube.com","youtube");
+                // window.open("http://www.youtube.com","_parent");
+                // myWindow =  window.open("http://www.youtube.com","","width = 500px,height=200px");
+                myWindow = window.open("","","width=500px,height=200px");
+                myWindow.document.write("<b>This is New Window</b>")
+                // window.open("http://www.youtube.com","","width = 500px,height=200px,left=100px,top=50px");
+               }
+               function closeWindow(){
+                window.close();
+               }
+               function moveWindow(){
+                myWindow.moveTo(100,100);
+                myWindow.focus();
+               }
+
+         </script>
+</body>
+</html>

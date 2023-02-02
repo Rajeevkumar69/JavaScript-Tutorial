@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <title>JavaScript Animation</title>
+        <style>
+                .test{
+                        width: 150px;
+                        height: 120px;
+                        background-color: blue;
+                        border-style:groove;
+                        /* border-radius: 100%; */
+                        margin: 10rem 10rem;
+                }
+        </style>
+</head>
+<body>
+        <!-- 
+                *  setInterval(fName,time)
+                *  clearInterval()
+         -->
+        
+         <div id="test" class="test">
+                <p id="mess" style="color: black; font-weight: bold; font-size: 12px" >File transfer</p>
+         </div>
+
+         <script>
+                var a = 0;
+                var id =  setInterval(anim,100);
+
+                function anim(){
+                        a= a+10;
+                        if(a == 200){
+                                clearInterval(id);
+                                
+                        }else{
+                        var target = document.getElementById("test");
+                        target.style.width = a + 'px';
+                        }
+                }
+         </script>
+</body>
+</html>

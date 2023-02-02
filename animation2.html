@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <title>JavaScript Animation ||</title>
+        <style>
+                .test{
+                        height: 150px;
+                        width: 150px;
+                        border-style: groove;
+                        background-color: chartreuse;
+                }
+        </style>
+</head>
+<body>
+        <!-- 
+                setTimeout(fname, time)            clearTimeout()
+         -->
+         <div id="test" class="test"></div>
+         <br>
+         <button onclick="stopAnim()" >Stop animation</button>
+
+
+         <script>
+                var  id = setTimeout(function(){
+                        var target = document.getElementById("test");
+                        target.style.width = "500px";
+                },5000);
+
+               
+                function stopAnim(){
+                        clearTimeout(id);
+                }
+         </script>
+</body>
+</html>

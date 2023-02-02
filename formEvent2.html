@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       
+        <title>Form Event in JavaScript</title>
+</head>
+<body>
+        <div class="student-details">
+                <form  onsubmit="submitFunction()">
+                <div class="name">
+                        <span>
+                                <label>Name &nbsp;</label>
+                        </span>
+                        <input type="text" id="name" onchange="changeFunction(this)" onselect="selectFunction(this)" value="Chamcham Gupta" >
+                </div>
+                <br><br>
+
+                <div class="class">
+                        <span>
+                                <label>Class &nbsp;</label>
+                        </span>
+                        <input type="number" id="roll" onchange="changeFunction(this)" onselect="selectFunction(this)" value="10">
+                </div>
+                <br><br>
+
+                <div class="email">
+                        <span><label for="">Email &nbsp;</label></span>
+                        <input oninvalid="alert('please enter your email')" required type="email" id="email">
+                </div>
+
+
+                <br><br>
+                <div class="about">
+                        <textarea onchange="changeFunction(this)" onselect="selectFunction(this)" id="about">About yourself</textarea>
+                </div>
+                <br><br>
+
+                <div class="country">
+                        <span><label for="">Nation &nbsp;</label></span>
+                        <select onchange="changeFunction(this)" >
+                                <option value="india">India</option>
+                                <option value="japan">Japan</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="China">China</option>
+                        </select>
+                </div>
+                <br><br>
+
+                <div class="button">
+                        <button id="button" type="submit" >Submit</button>
+                </div>
+                <br><br>
+
+                <div id="border" style="border: 5px solid skyblue;" class="border"></div>
+                <br><br>
+
+                
+
+        </form>
+        </div>
+
+        <script>
+                function changeFunction(element){
+                        var x = element.value;
+                        document.getElementById("border").innerHTML = x;
+                }
+                function selectFunction(element){
+                        console.log("Good Luck!");
+
+                }
+                function submitFunction(){
+                        var x = document.getElementById("name").value;
+                       alert("successful " + x );
+                }
+        </script>
+
+
+
+</body>
+</html>
