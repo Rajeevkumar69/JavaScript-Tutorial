@@ -1,0 +1,16 @@
+
+
+*	JavaScript is devloped by Bredon Eich in 1995.
+
+*	He was implementing java for the browser and devloped an easier programming language called Mocha
+
+*	Mocha was later renamed JavaScript
+
+*	In 2009, Node.Js was released. This allow programmer to write full application in JavaScript.
+
+*	npm was also released for installing reusable bits of code in libraries.
+
+*	     JavaScript is a light-weighted, client-side scripting language.
+*		 It's used for enhansing the intrection of a user with the webpage.
+*		 Widely used for game and mobile app devlopment.
+*		 Offers libraries and frameworks like Angular, React.js and Vue for front-end devlopment.
